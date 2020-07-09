@@ -61,3 +61,45 @@ section {
   padding: 0 1.5rem;
   margin: 0 auto;
 }
+
+.btn {
+  color: #fff;
+  border: none;
+  border-radius: 10rem;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.5rem 3.5rem;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-gradient {
+  background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover {
+  background-image: var(--gradient-color-alt);
+}
+
+.btn-purple {
+  background-color: var(--purple-solid);
+}
+
+.btn-purple:hover {
+  background-color: #56247f;
+}
+
+.dots {
+  font-size: 2.4rem;
+  margin-left: 0.5rem;
+  opacity: 0.75;
+}
+
+.form-btn {
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
