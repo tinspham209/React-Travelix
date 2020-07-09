@@ -1,0 +1,14 @@
+.nav-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  display: block;
+  padding: 1rem;
+}
