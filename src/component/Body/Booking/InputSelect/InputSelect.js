@@ -4,7 +4,7 @@ const InputSelect = (props) => {
   const { labelFor, labelName, selectId } = props;
   return (
     <div className="input-group">
-      <label for={labelFor} className="input-label">
+      <label htmlFor={labelFor} className="input-label">
         {labelName}
       </label>
       <select id={selectId} className="options">
