@@ -1,0 +1,22 @@
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hotel-name {
+  font-size: 2.6rem;
+}
+
+.hotel-price {
+  font-size: 1.8rem;
+}
+
+.hotel-rating {
+  margin: 1rem 0 2.5rem;
+}

@@ -1,0 +1,37 @@
+.section-head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  font-size: 1.7rem;
+  font-family: "Courgette", cursive;
+  font-weight: 300;
+  color: #a5a5a5;
+}
+
+.featured-hotels {
+  height: 35rem;
+  color: #ffffff;
+  padding: 1rem;
+  position: relative;
+  z-index: 0;
+}
+
+.featured-hotels::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--purple-transparent-alt);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
