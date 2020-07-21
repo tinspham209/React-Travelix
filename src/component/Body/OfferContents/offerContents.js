@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import Pagination from "component/Pagination/Pagination";
 import OfferContent from "./OfferContent/OfferContent";
 import "./offerContents.css";
 
