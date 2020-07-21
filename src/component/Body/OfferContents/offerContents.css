@@ -1,0 +1,9 @@
+.offer {
+  background: linear-gradient(
+      to right,
+      rgba(250, 158, 44, 0.8),
+      rgba(143, 80, 251, 0.8)
+    ),
+    url("../../../assets/images/the_paradise_bg.jpg") bottom center no-repeat;
+  background-size: cover;
+}
