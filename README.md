@@ -2,19 +2,28 @@
 
 ### Tool
 
-- React
+- React Hooks
+- react-icons
+- react-star-ratings
+- react-swipeable-views
 
 ### Template
 
 https://colorlib.com/preview/#travelix
+
+### Deploy
+
+http://travelix.surge.sh/
+
+### Function
+
+## -
 
 ### After this project
 
 i have basic understanding about
 
 -
-
-### Screenshot
 
 ### Set up
 
