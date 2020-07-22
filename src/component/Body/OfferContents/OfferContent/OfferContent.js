@@ -9,7 +9,7 @@ const OfferContent = (props) => {
   const { discount, hotelName, hotelRating, description } = props;
   return (
     <div className="offer-content">
-      <div className="discount">{discount}% off</div>
+      <div className="discount">{Number(discount)}% off</div>
       <h5 className="hotel-name">{hotelName}</h5>
       <div className="hotel-rating">
         <StarRatings
