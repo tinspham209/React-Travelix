@@ -10,10 +10,18 @@ const OfferContents = (props) => {
   const { listOffers } = props;
   const [index, setIndex] = useState(0);
 
-  //change background
+  // const changeBackgroundImage = (index) => {
+  //   let str = `url(${listOffers.offers[index].imgSource})`;
+  //   return str;
+  // };
 
   return (
-    <section className="offer">
+    <section
+      className="offer"
+      // style={{
+      //   backgroundImage: changeBackgroundImage(index),
+      // }}
+    >
       <div className="container">
         <AutoPlaySwipeableViews index={index} onChangeIndex={setIndex}>
           {listOffers.offers.map((offer) => {
