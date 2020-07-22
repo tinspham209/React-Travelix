@@ -1,6 +1,6 @@
 # Mini Project: Travelix - Hotel Booking Website
 
-### Tool
+### Tech-Stack
 
 - React Hooks
 - react-icons
