@@ -1,0 +1,9 @@
+.rooms {
+  background-color: #f2f6f9;
+}
+@media screen and (min-width: 1000px) {
+  .rooms-grid {
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 8rem;
+  }
+}
