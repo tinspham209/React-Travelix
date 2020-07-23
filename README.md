@@ -6,6 +6,7 @@
 - react-icons
 - react-star-ratings
 - react-swipeable-views
+- animated
 
 ### Template
 
