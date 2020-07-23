@@ -70,8 +70,7 @@ function getRooms() {
         id: 1,
         name: "Astro Hotel",
         price: "200",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_1.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -79,8 +78,7 @@ function getRooms() {
         id: 2,
         name: "Buoi Xuan Huan",
         price: "50",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_2.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -88,8 +86,7 @@ function getRooms() {
         id: 3,
         name: "Muong Thanh Hotel",
         price: "100",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_3.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -97,17 +94,7 @@ function getRooms() {
         id: 4,
         name: "Noor Hotel",
         price: "20",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        imgSource: require("assets/images/room_4.jpg"),
-        imgAlt: "astro-hotel",
-      },
-      {
-        id: 4,
-        name: "Noor Hotel",
-        price: "20",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_4.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -115,8 +102,7 @@ function getRooms() {
         id: 5,
         name: "Noor Hotel",
         price: "290",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_5.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -124,8 +110,7 @@ function getRooms() {
         id: 6,
         name: "Noor Hotel",
         price: "260",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_6.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -133,8 +118,7 @@ function getRooms() {
         id: 7,
         name: "Noor Hotel",
         price: "50",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_7.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -142,8 +126,7 @@ function getRooms() {
         id: 8,
         name: "Noor Hotel",
         price: "40",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_8.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -151,8 +134,7 @@ function getRooms() {
         id: 9,
         name: "Noor Hotel",
         price: "30",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_9.jpg"),
         imgAlt: "astro-hotel",
       },
@@ -160,8 +142,7 @@ function getRooms() {
         id: 10,
         name: "Noor Hotel",
         price: "24",
-        description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
         imgSource: require("assets/images/room_10.jpg"),
         imgAlt: "astro-hotel",
       },
