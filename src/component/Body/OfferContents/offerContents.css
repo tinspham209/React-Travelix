@@ -6,6 +6,10 @@
     ),
     url("../../../assets/images/the_paradise_bg.jpg") bottom center no-repeat;
   background-size: cover;
+
+  /* Ngan ko cho user select */
+  /* user-select: none;
+  -webkit-user-select: none; */
 }
 /*
 .offer {
