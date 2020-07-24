@@ -1,3 +1,8 @@
+.featured-rooms {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .image-wrap {
   position: relative;
   height: 25rem;

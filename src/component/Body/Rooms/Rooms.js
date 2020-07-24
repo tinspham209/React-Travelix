@@ -48,7 +48,7 @@ const Rooms = (props) => {
         <h5 className="section-head">
           <span className="heading">the best offers with rooms</span>
         </h5>
-        <div className="grid rooms-grid">
+        <div className="rooms-grid">
           <Slider {...settings}>
             {listRooms.rooms.map((room) => {
               return (

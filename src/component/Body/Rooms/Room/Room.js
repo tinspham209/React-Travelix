@@ -4,7 +4,7 @@ import "./Room.css";
 const Room = (props) => {
   const { roomName, roomPrice, roomDescription, imgSource, imgAlt } = props;
   return (
-    <div className="grid-item featured-rooms">
+    <div className="featured-rooms">
       <div className="image-wrap">
         <img src={imgSource} alt={imgAlt} className="room-image" />
         <h5 className="room-name">{roomName}</h5>
