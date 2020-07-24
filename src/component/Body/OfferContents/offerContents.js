@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import OfferContent from "./OfferContent/OfferContent";
 import "./offerContents.css";
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const OfferContents = (props) => {
   const { listOffers } = props;
@@ -15,6 +14,16 @@ const OfferContents = (props) => {
   //   return str;
   // };
 
+  let settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+  };
+
   return (
     <section
       className="offer"
@@ -23,7 +32,7 @@ const OfferContents = (props) => {
       // }}
     >
       <div className="container">
-        <AutoPlaySwipeableViews index={index} onChangeIndex={setIndex}>
+        <Slider {...settings}>
           {listOffers.offers.map((offer) => {
             return (
               <OfferContent
@@ -39,7 +48,7 @@ const OfferContents = (props) => {
               />
             );
           })}
-        </AutoPlaySwipeableViews>
+        </Slider>
       </div>
     </section>
   );

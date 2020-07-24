@@ -1,8 +1,6 @@
 import React from "react";
-import StarRatings from "react-star-ratings";
 import { FaEllipsisH } from "react-icons/fa";
-import Pagination from "component/Pagination/Pagination";
-
+import StarRatings from "react-star-ratings";
 import "./OfferContent.css";
 
 const OfferContent = (props) => {
@@ -33,11 +31,6 @@ const OfferContent = (props) => {
           <FaEllipsisH />
         </span>
       </a>
-      <Pagination
-        dots={props.dots}
-        index={props.index}
-        onChangeIndex={props.onChangeIndex}
-      />
     </div>
   );
 };
