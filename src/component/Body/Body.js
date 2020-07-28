@@ -4,6 +4,7 @@ import Booking from "./Booking/Booking";
 import Hotels from "./Hotels/Hotels";
 import OfferContents from "./OfferContents/offerContents";
 import Rooms from "./Rooms/Rooms";
+import Contact from "./Contact/Contact";
 
 function getHotels() {
   var json = {
@@ -162,6 +163,7 @@ const Body = () => {
       <Hotels listHotels={listHotels} />
       <OfferContents listOffers={listOffers} />
       <Rooms listRooms={listRooms} />
+      <Contact />
     </React.Fragment>
   );
 };
