@@ -45,3 +45,19 @@
   font-weight: 300;
   font-family: "Courgette", cursive;
 }
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .title {
+    font-size: 12rem;
+  }
+
+  .sub-title {
+    font-size: 4.6rem;
+  }
+}
