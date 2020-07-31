@@ -4,7 +4,9 @@ import Header from "./component/Header/header";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import NotFound from "./component/NotFound";
 import "./App.css";
-import Home from "./containers/Home/index";
+
+const Home = React.lazy(() => import("./containers/Home"));
+const About = React.lazy(() => import("./containers/About"));
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
             <Redirect exact from="/" to="/home" />
 
             <Route path="/home" component={Home} />
+            <Route path="/about" component={About} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>
