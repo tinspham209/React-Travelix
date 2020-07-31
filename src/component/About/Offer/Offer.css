@@ -1,0 +1,27 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  margin-top: 5rem;
+}
+.offer__image img {
+  width: 100%;
+}
+
+.offer__head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.offer__head-title {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.offer__head-paragraph {
+  color: #a5a5a5;
+  margin-bottom: 2.5rem;
+}
