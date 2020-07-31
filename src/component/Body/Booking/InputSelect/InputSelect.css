@@ -1,0 +1,5 @@
+@media screen and (min-width: 1000px) {
+  .options {
+    min-width: 10rem;
+  }
+}
