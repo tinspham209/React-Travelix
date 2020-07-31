@@ -7,6 +7,8 @@
 - react-star-ratings
 - react-swipeable-views
 - react-elastic-carousel
+- react-responsive
+- react-router-dom
 
 ### Template
 
@@ -17,8 +19,6 @@ https://colorlib.com/preview/#travelix
 http://travelix.surge.sh/
 
 ### Function
-
-## -
 
 ### After this project
 
