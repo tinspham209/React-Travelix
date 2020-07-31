@@ -1,15 +1,25 @@
-import React from "react";
-import "./App.css";
+import React, { Suspense } from "react";
 import Header from "./component/Header/header";
-import Body from "./component/Body/Body";
-import Footer from "./component/Footer/Footer";
+
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import NotFound from "./component/NotFound";
+import "./App.css";
+import Home from "./containers/Home/index";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Body />
-      <Footer />
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Redirect exact from="/" to="/home" />
+
+            <Route path="/home" component={Home} />
+            <Route component={NotFound} />
+          </Switch>
+        </BrowserRouter>
+      </Suspense>
     </div>
   );
 }
