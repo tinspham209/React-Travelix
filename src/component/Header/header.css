@@ -52,3 +52,40 @@
 
   transition: opacity 0.5s;
 }
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hamburger-menu {
+    /* display: none; */
+  }
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+
+    position: initial;
+    flex-direction: row;
+    justify-content: initial;
+
+    transform: scale(1);
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+    font-weight: normal;
+    transition: color 0.5s;
+  }
+  .nav-link:hover {
+    color: var(--yellow-solid);
+  }
+}
