@@ -1,8 +1,33 @@
 import React from "react";
 import imgTraveler from "assets/images/traveler.png";
 import "./Contact.css";
+import * as Yup from "yup";
+import { FaEllipsisH } from "react-icons/fa";
+
+import { FastField, Form, Formik } from "formik";
+import InputField from "../../custom-fields/InputField/index";
+import Textarea from "../../custom-fields/Textarea/index";
 
 const Contact = (props) => {
+  const initialValues = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required("This field is required."),
+    email: Yup.string().email().required("This field is required."),
+    subject: Yup.string().required("This field is required."),
+    message: Yup.string().required("This field is required."),
+  });
+
+  const handleSubmit = (values) => {
+    return new Promise((resolve) => {
+      console.log("Form submit", values);
+    });
+  };
+
   return (
     <section className="contact">
       <div className="container">
@@ -14,53 +39,63 @@ const Contact = (props) => {
           <div className="traveler-wrap">
             <img src={imgTraveler} alt="img-traveler" />
           </div>
-          <form action="" className="form contact-form">
-            <div className="input-group-wrap">
-              <div className="input-group">
-                <input
-                  type="text"
-                  className="input"
-                  placeholder="Name"
-                  required
-                />
-                <span className="bar"></span>
-              </div>
-              <div className="input-group">
-                <input
-                  type="email"
-                  className="input"
-                  placeholder="Email"
-                  required
-                />
-                <span className="bar"></span>
-              </div>
-            </div>
 
-            <div class="input-group">
-              <input
-                type="text"
-                className="input"
-                placeholder="Subject"
-                required
-              />
-              <span className="bar"></span>
-            </div>
-            <div className="input-group">
-              <textarea
-                className="input"
-                cols="30"
-                rows="8"
-                placeholder="E-mail"
-              ></textarea>
-              <span className="bar"></span>
-            </div>
-            <button className="btn form-btn btn-purple" type="submit">
-              Send Message
-              <span className="dots">
-                <i className="fas fa-ellipsis-h"></i>
-              </span>
-            </button>
-          </form>
+          <Formik
+            initialValues={initialValues}
+            onSubmit={handleSubmit}
+            validationSchema={validationSchema}
+          >
+            {(formikProps) => {
+              const {
+                values,
+                errors,
+                touched,
+                //  isSubmitting
+              } = formikProps;
+              console.log({ values, errors, touched });
+
+              return (
+                <Form className="form contact-form">
+                  <div className="input-group-wrap">
+                    <FastField
+                      type="text"
+                      name="name"
+                      component={InputField}
+                      label="name"
+                      placeholder="Name"
+                    />
+                    <FastField
+                      type="email"
+                      name="email"
+                      component={InputField}
+                      label="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <FastField
+                    type="text"
+                    name="subject"
+                    component={InputField}
+                    label="subject"
+                    placeholder="Subject"
+                  />
+                  <FastField
+                    type="text"
+                    name="message"
+                    component={Textarea}
+                    label="message"
+                    placeholder="Message"
+                  />
+                  <button className="btn form-btn btn-purple" type="submit">
+                    Send Message
+                    <span className="dots">
+                      <FaEllipsisH />
+                    </span>
+                  </button>
+                </Form>
+              );
+            }}
+          </Formik>
         </div>
       </div>
     </section>
