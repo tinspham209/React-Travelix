@@ -63,10 +63,10 @@
 }
 
 @media screen and (min-width: 1000px) {
-  /* .featured-rooms {
+  .featured-rooms {
     flex-direction: row;
     align-items: flex-start;
-  } */
+  }
 
   .room-info-wrap {
     margin-left: 1.5rem;
