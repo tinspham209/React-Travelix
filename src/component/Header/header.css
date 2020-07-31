@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 1000px) {
   .hamburger-menu {
-    /* display: none; */
+    display: none;
   }
   .nav-list {
     width: initial;
