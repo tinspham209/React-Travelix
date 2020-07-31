@@ -35,11 +35,11 @@ const Header = () => {
                   }
             }
           >
-            <Navigation href="index.html" name="Home" />
-            <Navigation href="#" name="About" />
-            <Navigation href="#" name="Offers" />
-            <Navigation href="#" name="News" />
-            <Navigation href="#" name="Contact" />
+            <Navigation href="/home" name="Home" />
+            <Navigation href="/about" name="About" />
+            <Navigation href="/offers" name="Offers" />
+            <Navigation href="/news" name="News" />
+            <Navigation href="/contact" name="Contact" />
           </ul>
         </nav>
       </div>
