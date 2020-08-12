@@ -19,3 +19,13 @@ export const getOffersData = async () => {
 		console.log("error getOffers ", error.message);
 	}
 };
+
+export const getRoomsData = async () => {
+	try {
+		const { data } = await axios.get(`${url}/rooms`);
+		console.log("dataRooms", data);
+		return data;
+	} catch (error) {
+		console.log("error getRooms ", error.message);
+	}
+};
