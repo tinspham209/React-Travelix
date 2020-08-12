@@ -23,7 +23,6 @@ export const getOffersData = async () => {
 export const getRoomsData = async () => {
 	try {
 		const { data } = await axios.get(`${url}/rooms`);
-		console.log("dataRooms", data);
 		return data;
 	} catch (error) {
 		console.log("error getRooms ", error.message);
