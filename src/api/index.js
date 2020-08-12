@@ -10,3 +10,12 @@ export const getHotelsData = async () => {
 		console.log("error getHotels ", error.message);
 	}
 };
+
+export const getOffersData = async () => {
+	try {
+		const { data } = await axios.get(`${url}/offers`);
+		return data;
+	} catch (error) {
+		console.log("error getOffers ", error.message);
+	}
+};
