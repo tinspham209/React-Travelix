@@ -6,32 +6,6 @@ import OfferContents from "./OfferContents/offerContents";
 import Rooms from "./Rooms/Rooms";
 import Contact from "./Contact/Contact";
 
-function getOffers() {
-	var json = {
-		offers: [
-			{
-				id: 1,
-				name: "Maldives Deluxe Package",
-				rating: "4",
-				description:
-					"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-				discount: "40",
-				imgSource: require("assets/images/maldives_deluxe_package_bg.jpg"),
-			},
-			{
-				id: 2,
-				name: "The paradise",
-				rating: "4",
-				description:
-					"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-				discount: "20",
-				imgSource: require("assets/images/the_paradise_bg.jpg"),
-			},
-		],
-	};
-	return json;
-}
-
 function getRooms() {
 	var json = {
 		rooms: [
@@ -120,8 +94,7 @@ function getRooms() {
 	return json;
 }
 
-const Body = ({ hotels }) => {
-	const listOffers = getOffers();
+const Body = ({ hotels, offers }) => {
 	const listRooms = getRooms();
 
 	return (
@@ -129,7 +102,7 @@ const Body = ({ hotels }) => {
 			<Hero />
 			<Booking />
 			<Hotels listHotels={hotels} />
-			<OfferContents listOffers={listOffers} />
+			<OfferContents listOffers={offers} />
 			<Rooms listRooms={listRooms} />
 			<Contact />
 		</React.Fragment>
