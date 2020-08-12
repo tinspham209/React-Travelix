@@ -47,18 +47,20 @@ const Rooms = (props) => {
 	if (listRooms) {
 		roomsRender = (
 			<React.Fragment>
-				{listRooms.rooms.map((room) => {
-					return (
-						<Room
-							key={room._id}
-							roomName={room.name}
-							roomPrice={room.price}
-							roomDescription={room.description}
-							imgSource={room.imgSource}
-							imgAlt={room.imgAlt}
-						/>
-					);
-				})}
+				<Slider {...settings}>
+					{listRooms.rooms.map((room) => {
+						return (
+							<Room
+								key={room._id}
+								roomName={room.name}
+								roomPrice={room.price}
+								roomDescription={room.description}
+								imgSource={room.imgSource}
+								imgAlt={room.imgAlt}
+							/>
+						);
+					})}
+				</Slider>
 			</React.Fragment>
 		);
 	}
@@ -69,9 +71,7 @@ const Rooms = (props) => {
 				<h5 className="section-head">
 					<span className="heading">the best offers with rooms</span>
 				</h5>
-				<div className="rooms-grid">
-					<Slider {...settings}>{roomsRender}</Slider>
-				</div>
+				<div className="rooms-grid">{roomsRender}</div>
 			</div>
 		</section>
 	);
