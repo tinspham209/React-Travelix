@@ -10,29 +10,6 @@ const OfferContents = (props) => {
 	const { listOffers } = props;
 	const [index, setIndex] = useState(0);
 
-	let offersContentRender = <Spinner />;
-	if (listOffers) {
-		offersContentRender = (
-			<React.Fragment>
-				{listOffers.offers.map((offer) => {
-					return (
-						<OfferContent
-							key={offer._id}
-							hotelName={offer.name}
-							hotelRating={offer.rating}
-							description={offer.description}
-							discount={offer.discount}
-							imgSource={offer.imgSource}
-							dots={listOffers.offers.length}
-							index={index}
-							onChangeIndex={setIndex}
-						/>
-					);
-				})}
-			</React.Fragment>
-		);
-	}
-
 	// const changeBackgroundImage = (index) => {
 	//   let str = `url(${listOffers.offers[index].imgSource})`;
 	//   return str;
@@ -48,6 +25,31 @@ const OfferContents = (props) => {
 		pauseOnHover: true,
 	};
 
+	let offersContentRender = <Spinner />;
+	if (listOffers) {
+		offersContentRender = (
+			<React.Fragment>
+				<Slider {...settings}>
+					{listOffers.offers.map((offer) => {
+						return (
+							<OfferContent
+								key={offer._id}
+								hotelName={offer.name}
+								hotelRating={offer.rating}
+								description={offer.description}
+								discount={offer.discount}
+								imgSource={offer.imgSource}
+								dots={listOffers.offers.length}
+								index={index}
+								onChangeIndex={setIndex}
+							/>
+						);
+					})}
+				</Slider>
+			</React.Fragment>
+		);
+	}
+
 	return (
 		<section
 			className="offer"
@@ -55,9 +57,7 @@ const OfferContents = (props) => {
 			//   backgroundImage: changeBackgroundImage(index),
 			// }}
 		>
-			<div className="container">
-				<Slider {...settings}>{offersContentRender}</Slider>
-			</div>
+			<div className="container">{offersContentRender}</div>
 		</section>
 	);
 };
